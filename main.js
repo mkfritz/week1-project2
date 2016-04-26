@@ -12,22 +12,48 @@
 //    Use any method you choose to add at least 4 items to it.
 
 console.log("Question 1");
+var hawks = [ ];
+hawks.push('toews');
+hawks.unshift('keith');
+hawks.splice(1, 0, 'panarin', 'hjalmarsson');
+console.log(hawks);
 
 // 2. Add an additional item to the beginning of your array.
 
+console.log("Question 2");
+hawks.unshift('crawford');
+console.log(hawks);
+
 // 3. Remove the second and third items in your array.
+
+console.log("Question 3");
+hawks.splice(1,2);
+console.log(hawks);
 
 // 4. Add two new items after the second item.
 
+console.log("Question 4");
+hawks.splice(1,0,'ladd', 'teravainen');
+console.log(hawks);
+
 // 5. Write 'The current length of the array is....' using the .length method
+
+console.log("Question 5");
+console.log('The current length of the array is ' + hawks.length + '.');
 
 // Use the following Array for questions 6-11:
 var things = ['mug', 'book', 'mouse', 'plant', 'sunglasses'];
 
 // 6. Change 'mouse' to 'keyboard'
 
+console.log("Question 6");
+things[2] = 'keyboard';
+console.log(things);
+
 // 7. Combine all of the elements of the array into a string.
 //    (Hint: check out the 'join' method.)
+
+
 
 // 8. Declare a variable called lastItem using .pop() on the things array.
 //    Add two new items to lastItem, one at the beginning and one at the end.

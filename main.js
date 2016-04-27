@@ -102,11 +102,30 @@ var people = ['Bill', 'Ted', 'Emily', 'Andrea', 'Doug'];
 
 // 13. Add two new people after 'Doug'
 
+console.log("Question 13");
+people.push('Steve', 'Quimby');
+console.log(people);
+
 // 14. Remove everybody except 'Andrea' and 'Ted'
+
+console.log("Question 14");
+people.shift(1);
+people.splice(1,1);
+people.splice(2,3);
+console.log(people);
 
 // 15. Add a new person to the beginning of the Array
 
+console.log("Question 15");
+people.unshift('Jethro');
+console.log(people);
+
 // 16. Arrange the items alphabetically. Store this Array as orderedPeople
+
+console.log("Question 16");
+people.sort();
+var orderedPeople = people.slice();
+console.log(orderedPeople);
 
 // 17. Create an array of arrays with the following three arrays:
 var array1 = ["Fido", "Spot", "Rex", "Sparky"]
@@ -120,7 +139,17 @@ var array4 = [
                 ["White", "Black", "Spotted", "Tri-color"]
               ]
 
+console.log("Question 17");
+array1.splice(4, 0, array2, array3);
+var array4 = array1.slice();
+console.log(array4);
+
 // 18. Remove "Sparky" and "White" from the above array of arrays.
+
+console.log("Question 18");
+array4.splice(3,1);
+array4.splice(8,1);
+console.log(array4);
 
 // BONUS 1: Try to arrange the following items from smallest to largest:
 var sortingNumbers = [2, 5, 98, 55, 77, 300]
